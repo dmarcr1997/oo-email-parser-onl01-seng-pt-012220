@@ -7,7 +7,7 @@ class EmailAddressParser
   
   attr_accessor :email_list
   
-  def self.parse(emails)
+  def parse(email)
     parse_list = []
     if emails.include?(", ")
       parse_list = emails.split(", ")
