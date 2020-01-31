@@ -13,8 +13,7 @@ class EmailAddressParser
     else
       parse_list = emails.split(" ")
     end
-    parse_list
-    binding.pry
+    self.email_list = parse_list
   end
     
   
