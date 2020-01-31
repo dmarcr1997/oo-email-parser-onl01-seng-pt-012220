@@ -7,7 +7,15 @@ class EmailAddressParser
   
   attr_accessor :email_list
   
-  
+  def parse(emails)
+    if emails.include?(", ")
+      parse_list = emails.split(", ")
+    else
+      parse_list = emails.split(" ")
+    end
+    parse_list
+  end
+    
   
     
 end
