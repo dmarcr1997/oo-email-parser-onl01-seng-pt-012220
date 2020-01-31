@@ -7,13 +7,18 @@ class EmailAddressParser
   
   attr_accessor :email_list
   
-  def parse(email)
+  def initialize(emails)
+    @@email_list = emails
+  end  
+  
+  def parse
     parse_list = []
-    if email.include?(", ")
+    if @@email_list.include?(", ")
       parse_list = emails.split(", ")
     else
       parse_list = emails.split(" ")
     end
     parse_list
   end
+  
 end
