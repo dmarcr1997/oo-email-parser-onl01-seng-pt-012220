@@ -16,7 +16,4 @@ class EmailAddressParser
     end
     self.email_list = parse_list
   end
-    
-  
-    
 end
