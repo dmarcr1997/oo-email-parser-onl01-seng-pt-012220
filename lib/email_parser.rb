@@ -18,7 +18,7 @@ class EmailAddressParser
     else
       parse_list = @@email_list.split(" ")
     end
-    unique_list = parse_list.unique
+    unique_list = parse_list.uniq!
     unique_list
   end
   
