@@ -7,4 +7,4 @@ class EmailParser
   
   attr_accessor :email_list
   
-  
+end
