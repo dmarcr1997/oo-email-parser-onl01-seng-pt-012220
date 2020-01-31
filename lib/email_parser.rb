@@ -18,7 +18,7 @@ class EmailAddressParser
     else
       parse_list = emails.split(" ")
     end
-    parse_list
+    unique_list = parse_list.unique
   end
   
 end
