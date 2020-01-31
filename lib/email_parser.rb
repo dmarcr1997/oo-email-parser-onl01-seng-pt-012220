@@ -9,11 +9,11 @@ class EmailAddressParser
   
   def parse(email)
     parse_list = []
-    if emails.include?(", ")
+    if email.include?(", ")
       parse_list = emails.split(", ")
     else
       parse_list = emails.split(" ")
     end
-    self.email_list = parse_list
+    parse_list
   end
 end
