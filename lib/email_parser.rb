@@ -14,9 +14,9 @@ class EmailAddressParser
   def parse
     parse_list = []
     if @@email_list.include?(", ")
-      parse_list = @@email_list.split(", ")
+      parse_list << @@email_list.split(", ")
     else
-      parse_list = @@email_list.split(" ")
+      parse_list << @@email_list.split(" ")
     end
     unique_list = parse_list.uniq!
     unique_list
